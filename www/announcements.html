@@ -22,9 +22,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js" ></script>
 </head>
 
 <body id="page-top">
@@ -138,7 +135,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-	<script>
+	<!-- <script>
 		$(document).ready(function(){
 		$.ajax({ url: "database/update.html",
 				context: document.body,
@@ -167,6 +164,11 @@
 			// do something with your data
 			console.log(data);
 		});
-	</script>
+	</script> -->
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
 </body>
 </html>
